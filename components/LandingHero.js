@@ -304,16 +304,37 @@ export default function LandingHero({ tags = [] }) {
     stage.style.setProperty("--my", `${event.clientY - box.top}px`);
   };
 
-  const letters = TITLE.split("").map((char, index) => (
-    <span
-      className="kinetic-letter"
-      aria-hidden="true"
-      key={`${char}-${index}`}
-      style={{ animationDelay: `${reduced ? 0 : 240 + index * 55}ms` }}
-    >
-      {char === " " ? "\u00A0" : char}
-    </span>
-  ));
+  // Group the letters by word so the browser can only wrap between words —
+  // individual inline-block letters otherwise count as break opportunities
+  // and a single letter (e.g. the "y" in "My") can land on its own line.
+  const words = TITLE.split(" ");
+  let letterCursor = 0;
+  const titleWords = words.map((word, wordIndex) => {
+    const chars = [
+      ...word.split(""),
+      ...(wordIndex < words.length - 1 ? ["\u00A0"] : []),
+    ];
+
+    const letters = chars.map((char) => {
+      const index = letterCursor;
+      letterCursor += 1;
+      return (
+        <span
+          className="kinetic-letter"
+          key={`${char}-${index}`}
+          style={{ animationDelay: `${reduced ? 0 : 240 + index * 55}ms` }}
+        >
+          {char}
+        </span>
+      );
+    });
+
+    return (
+      <span className="kinetic-word" key={word}>
+        {letters}
+      </span>
+    );
+  });
 
   return (
     <section className="hero-stage" ref={stageRef} onPointerMove={handlePointer}>
@@ -322,7 +343,7 @@ export default function LandingHero({ tags = [] }) {
           <p className="hero-eyebrow">Notes from my classroom &amp; beyond</p>
 
           <h1 className="kinetic-title" aria-label={TITLE}>
-            {letters}
+            {titleWords}
           </h1>
 
           <svg

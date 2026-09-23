@@ -11,6 +11,7 @@
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --radius: 14px;
+  --gutter: clamp(20px, 4vw, 56px);
 }
 
 * {
@@ -54,6 +55,15 @@ a:hover {
 
 .container.narrow {
   max-width: 720px;
+}
+
+/* Full-bleed containers: the landing page and the header/footer bars. */
+.container.landing,
+.container.nav-inner,
+.container.footer-inner {
+  max-width: none;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
 }
 
 .site-main {
@@ -728,6 +738,11 @@ a:hover {
   letter-spacing: -0.04em;
 }
 
+.kinetic-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .kinetic-letter {
   display: inline-block;
   opacity: 0;
@@ -1125,6 +1140,11 @@ a:hover {
   width: 100%;
   height: auto;
   animation: floaty 8s ease-in-out infinite;
+}
+
+/* Keeps line lengths readable now that the landing page runs full width. */
+.about-teaser-copy {
+  max-width: 640px;
 }
 
 .about-teaser-copy .page-title {
