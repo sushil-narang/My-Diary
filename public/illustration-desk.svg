@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480" width="700" height="480" role="img" aria-label="Illustration of a desk with an open notebook, a pencil, coffee and a small plant">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdf7ec"/>
+      <stop offset="100%" stop-color="#f6e7d6"/>
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#26211b" opacity="0.10"/>
+    </pattern>
+  </defs>
+
+  <rect width="700" height="480" fill="url(#bg)"/>
+  <rect width="700" height="480" fill="url(#dots)"/>
+  <rect x="14" y="14" width="672" height="452" rx="26" fill="none" stroke="#26211b" stroke-opacity="0.16" stroke-width="2"/>
+
+  <!-- desk surface -->
+  <rect x="16" y="356" width="668" height="110" rx="22" fill="#e7d3b6"/>
+  <line x1="16" y1="356" x2="684" y2="356" stroke="#26211b" stroke-opacity="0.18" stroke-width="2"/>
+
+  <!-- sticky notes -->
+  <g>
+    <rect x="62" y="70" width="96" height="86" rx="8" fill="#e8b04b" stroke="#26211b" stroke-width="3.5" transform="rotate(-7 110 113)"/>
+    <g stroke="#26211b" stroke-opacity="0.55" stroke-width="4" stroke-linecap="round" transform="rotate(-7 110 113)">
+      <line x1="78" y1="96" x2="142" y2="96"/>
+      <line x1="78" y1="114" x2="142" y2="114"/>
+      <line x1="78" y1="132" x2="118" y2="132"/>
+    </g>
+
+    <rect x="148" y="96" width="88" height="80" rx="8" fill="#f3e3d8" stroke="#26211b" stroke-width="3.5" transform="rotate(6 192 136)"/>
+    <g stroke="#b4552d" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round" transform="rotate(6 192 136)">
+      <line x1="164" y1="122" x2="220" y2="122"/>
+      <line x1="164" y1="140" x2="220" y2="140"/>
+      <line x1="164" y1="158" x2="196" y2="158"/>
+    </g>
+  </g>
+
+  <!-- neural doodle, wall art -->
+  <g>
+    <rect x="470" y="64" width="176" height="132" rx="14" fill="#fffdf8" stroke="#26211b" stroke-width="4"/>
+    <g stroke="#b4552d" stroke-width="3" stroke-linecap="round">
+      <line x1="510" y1="150" x2="548" y2="98"/>
+      <line x1="548" y1="98" x2="596" y2="132"/>
+      <line x1="596" y1="132" x2="620" y2="94"/>
+      <line x1="510" y1="150" x2="596" y2="132"/>
+    </g>
+    <g fill="#26211b">
+      <circle cx="510" cy="150" r="8"/>
+      <circle cx="548" cy="98" r="9"/>
+      <circle cx="596" cy="132" r="8"/>
+      <circle cx="620" cy="94" r="7"/>
+    </g>
+    <circle cx="548" cy="98" r="15" fill="none" stroke="#b4552d" stroke-width="3" opacity="0.55">
+      <animate attributeName="r" values="15;21;15" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.55;0;0.55" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- open notebook -->
+  <g>
+    <path d="M110 372 C 176 340, 254 336, 320 360 L320 208 C 254 184, 176 188, 110 220 Z"
+          fill="#fffdf8" stroke="#26211b" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M530 372 C 464 340, 386 336, 320 360 L320 208 C 386 184, 464 188, 530 220 Z"
+          fill="#fffdf8" stroke="#26211b" stroke-width="5" stroke-linejoin="round"/>
+    <line x1="320" y1="208" x2="320" y2="360" stroke="#26211b" stroke-width="5" stroke-linecap="round"/>
+
+    <g stroke="#cdc2ae" stroke-width="8" stroke-linecap="round">
+      <line x1="142" y1="248" x2="284" y2="262"/>
+      <line x1="142" y1="278" x2="284" y2="292"/>
+      <line x1="142" y1="308" x2="284" y2="322"/>
+      <line x1="142" y1="338" x2="232" y2="348"/>
+    </g>
+    <g stroke="#cdc2ae" stroke-width="8" stroke-linecap="round">
+      <line x1="356" y1="262" x2="498" y2="248"/>
+      <line x1="356" y1="292" x2="498" y2="278"/>
+      <line x1="356" y1="322" x2="498" y2="308"/>
+      <line x1="408" y1="348" x2="498" y2="338"/>
+    </g>
+
+    <path d="M356 336 C 386 316, 424 352, 468 330" fill="none" stroke="#b4552d" stroke-width="6" stroke-linecap="round"/>
+    <rect x="176" y="296" width="72" height="16" rx="8" fill="#e8b04b" opacity="0.6"/>
+  </g>
+
+  <!-- pencil resting on the page -->
+  <g transform="translate(392 372) rotate(-16)">
+    <rect x="-16" y="-10" width="86" height="20" rx="6" fill="#e8b04b" stroke="#26211b" stroke-width="4"/>
+    <rect x="-28" y="-10" width="14" height="20" rx="6" fill="#b4552d" stroke="#26211b" stroke-width="4"/>
+    <path d="M70 -10 L94 0 L70 10 Z" fill="#f4e0c3" stroke="#26211b" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M87 -4 L94 0 L87 4 Z" fill="#26211b"/>
+  </g>
+
+  <!-- coffee cup -->
+  <g>
+    <g stroke="#b4552d" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.75" stroke-dasharray="18 12">
+      <path d="M596 258 C 586 244, 606 236, 596 220"/>
+      <animate attributeName="stroke-dashoffset" values="0;-30" dur="3s" repeatCount="indefinite"/>
+    </g>
+    <path d="M556 272 h72 l-10 62 a16 16 0 0 1 -16 14 h-20 a16 16 0 0 1 -16 -14 Z"
+          fill="#fffdf8" stroke="#26211b" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M628 286 a20 20 0 0 1 0 40" fill="none" stroke="#26211b" stroke-width="5"/>
+    <ellipse cx="592" cy="272" rx="36" ry="10" fill="#8f3d1c" stroke="#26211b" stroke-width="5"/>
+    <ellipse cx="556" cy="356" rx="52" ry="12" fill="#f3e3d8" stroke="#26211b" stroke-width="4" opacity="0.9"/>
+  </g>
+
+  <!-- plant -->
+  <g>
+    <path d="M60 356 h74 l-9 66 a14 14 0 0 1 -14 12 H83 a14 14 0 0 1 -14 -12 Z"
+          fill="#c9673c" stroke="#26211b" stroke-width="5" stroke-linejoin="round"/>
+    <g stroke="#5c7a5a" stroke-width="7" fill="none" stroke-linecap="round">
+      <path d="M97 356 C 92 322, 72 306, 56 300"/>
+      <path d="M97 356 C 102 320, 122 304, 140 300"/>
+      <path d="M97 356 C 97 326, 97 312, 97 292"/>
+    </g>
+    <g fill="#5c7a5a">
+      <ellipse cx="54" cy="296" rx="16" ry="9" transform="rotate(-24 54 296)"/>
+      <ellipse cx="142" cy="296" rx="16" ry="9" transform="rotate(24 142 296)"/>
+      <ellipse cx="97" cy="286" rx="9" ry="16"/>
+    </g>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#b4552d" opacity="0.85">
+    <path d="M300 96 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 Z"/>
+    <path d="M404 176 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 Z"/>
+    <path d="M242 148 l3.5 8 8 3.5 -8 3.5 -3.5 8 -3.5 -8 -8 -3.5 8 -3.5 Z"/>
+  </g>
+</svg>
