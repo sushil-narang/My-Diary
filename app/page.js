@@ -22,6 +22,8 @@ export default function HomePage() {
 
   return (
     <div className="container landing">
+          <elevenlabs-convai agent-id="agent_3601m34ez0y7e0b8bmy5kgm77dce"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
       <LandingHero tags={tags} />
 
       <TopicMarquee items={marqueeItems} />
